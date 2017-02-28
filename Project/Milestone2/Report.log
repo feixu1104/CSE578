@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.6)  24 FEB 2017 00:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.6)  28 FEB 2017 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -210,8 +210,7 @@ Package caption Info: float package is loaded.
 \c@lotdepth=\count104
 \sf@top=\skip47
 \sf@bottom=\skip48
-)
-No file Report.aux.
+) (./Report.aux)
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -226,6 +225,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
+
 -- Lines per column: 61 (exact).
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -321,32 +321,17 @@ Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
 
-
-LaTeX Warning: Citation `paper1' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Citation `paper2' on page 1 undefined on input line 34.
-
-
-LaTeX Warning: Citation `relatedwork1' on page 1 undefined on input line 34.
-
 <relatedwork1.png, id=1, 401.5pt x 247.92625pt>
 File: relatedwork1.png Graphic file (type png)
  <use relatedwork1.png>
 Package pdftex.def Info: relatedwork1.png used on input line 38.
 (pdftex.def)             Requested size: 216.81pt x 133.88196pt.
 
-
-LaTeX Warning: Citation `relatedwork2' on page 1 undefined on input line 42.
-
 <relatedwork2.png, id=3, 401.5pt x 203.76125pt>
 File: relatedwork2.png Graphic file (type png)
  <use relatedwork2.png>
 Package pdftex.def Info: relatedwork2.png used on input line 46.
 (pdftex.def)             Requested size: 216.81pt x 110.03253pt.
-
-
-LaTeX Warning: Citation `relatedwork2' on page 1 undefined on input line 50.
 
 <relatedwork3.png, id=4, 208.78pt x 240.9pt>
 File: relatedwork3.png Graphic file (type png)
@@ -357,9 +342,6 @@ Package pdftex.def Info: relatedwork3.png used on input line 54.
 
 
  <./relatedwork1.png> <./relatedwork2.png>]
-
-LaTeX Warning: Citation `relatedwork3' on page 2 undefined on input line 61.
-
 LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 63.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -378,21 +360,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--63
 
  []
 
-<relatedwork4.png, id=17, 803.0pt x 247.42438pt>
+<relatedwork4.png, id=16, 803.0pt x 247.42438pt>
 File: relatedwork4.png Graphic file (type png)
  <use relatedwork4.png>
 Package pdftex.def Info: relatedwork4.png used on input line 70.
 (pdftex.def)             Requested size: 245.71754pt x 75.71161pt.
-
-
-LaTeX Warning: Citation `relatedwork3' on page 2 undefined on input line 74.
-
-
-LaTeX Warning: Citation `relatedwork4' on page 2 undefined on input line 77.
-
-
-LaTeX Warning: Citation `relatedwork4' on page 2 undefined on input line 77.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 74--78
 
@@ -403,7 +375,7 @@ Underfull \hbox (badness 1436) in paragraph at lines 74--78
 \OT1/ppl/m/n/9.53561 The Man-hat-tan or the bar graph is an-other pop-u-lar
  []
 
-<relatedwork5.png, id=18, 513.92pt x 306.64563pt>
+<relatedwork5.png, id=17, 513.92pt x 306.64563pt>
 File: relatedwork5.png Graphic file (type png)
  <use relatedwork5.png>
 Package pdftex.def Info: relatedwork5.png used on input line 81.
@@ -412,20 +384,15 @@ Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
 
-
-LaTeX Warning: Citation `relatedwork5' on page 2 undefined on input line 85.
-
-<relatedwork6.png, id=19, 321.2pt x 204.765pt>
+<relatedwork6.png, id=18, 321.2pt x 204.765pt>
 File: relatedwork6.png Graphic file (type png)
  <use relatedwork6.png>
 Package pdftex.def Info: relatedwork6.png used on input line 89.
 (pdftex.def)             Requested size: 231.26378pt x 147.43379pt.
  [2 <./relatedwork3.png> <./relatedwork4.png> <./relatedwork5.png> <./relatedwo
 rk6.png>]
-
-LaTeX Warning: Citation `dataset' on page 3 undefined on input line 96.
-
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 116.
+
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -445,35 +412,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no “ in font pplr7t!
-[3] (./Report.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[3] (./Report.aux) ) 
 Here is how much of TeX's memory you used:
- 3963 strings out of 493013
- 66449 string characters out of 6133344
- 233047 words of memory out of 5000000
+ 3964 strings out of 493013
+ 66465 string characters out of 6133344
+ 233074 words of memory out of 5000000
  7463 multiletter control sequences out of 15000+600000
- 44664 words of font info for 96 fonts, out of 8000000 for 9000
+ 44055 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,9n,49p,1411b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
-/palatino/uplri8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/zapfd
-ing/uzdr.pfb>
-Output written on Report.pdf (3 pages, 1288518 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on Report.pdf (3 pages, 1278922 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
