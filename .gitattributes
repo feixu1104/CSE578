@@ -1,3 +1,4 @@
 Recordings/7Jan.m4a filter=lfs diff=lfs merge=lfs -text
 Recordings/9Jan.m4a filter=lfs diff=lfs merge=lfs -text
 Recordings/7Feb.m4a filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
