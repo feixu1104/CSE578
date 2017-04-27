@@ -7,7 +7,7 @@ var segmentsStacked = ["win", "lose"];
 var selectedMatches = [], selectedMatchData = [];
 var scatterPlot, barChart;
 var color = d3.scale.ordinal().domain(segmentsStacked).range(
-    ["#0000CC", "#CC0000"]);
+    ["#2E94B9", "#FD5959"]);
 
 function BarChart(container) {
 
@@ -118,13 +118,13 @@ function BarChart(container) {
 
     model.when(["xScale"], function (xScale) {
 
-        xAxis.scale(xScale)
+        xAxis.scale(xScale);
         xAxisG.call(xAxis).selectAll("text").attr("y", 20).attr("x", 0).attr(
             "dy", ".35em").attr("transform", "rotate(-15)");
     });
 
     model.when(["yScale"], function (yScale) {
-        yAxis.scale(yScale)
+        yAxis.scale(yScale);
         yAxisG.call(yAxis);
     });
 
@@ -225,67 +225,68 @@ function ScatterPlot(div) {
         brushG.call(brush).call(brush.event);
     });
 
-    model.when(['width', 'height', 'data', 'xField', 'yField'], function (width, height, data, xField, yField) {
+    model.when(['width', 'height', 'data', 'xField', 'yField'],
+        function (width, height, data, xField, yField) {
 
-        // Updated the scales
-        x.domain(d3.extent(data, function (d) {
-            return d[xField];
-        })).nice();
-        y.domain(d3.extent(data, function (d) {
-            return d[yField];
-        })).nice();
+            // Updated the scales
+            x.domain(d3.extent(data, function (d) {
+                return d[xField];
+            })).nice();
+            y.domain(d3.extent(data, function (d) {
+                return d[yField];
+            })).nice();
 
-        x.range([0, width]);
-        y.range([height, 0]);
+            x.range([0, width]);
+            y.range([height, 0]);
 
-        // update the quadtree
-        quadtree = d3.geom.quadtree().x(function (d) {
-            return x(d[xField]);
-        }).y(function (d) {
-            return y(d[yField]);
-        })(data);
+            // update the quadtree
+            quadtree = d3.geom.quadtree().x(function (d) {
+                return x(d[xField]);
+            }).y(function (d) {
+                return y(d[yField]);
+            })(data);
 
-        // update the axes
-        xAxisG.call(xAxis);
-        yAxisG.call(yAxis);
+            // update the axes
+            xAxisG.call(xAxis);
+            yAxisG.call(yAxis);
 
-        // Plot the data as dots
-        dots = dotsG.selectAll('.dot').data(data);
-        dots.enter().append('circle').attr('class', 'dot').attr('r', 3.5);
-        dots.selectAll('title').remove();
-        dots.attr('cx', function (d) {
-            return x(d[xField]);
-        }).attr('cy', function (d) {
-            return y(d[yField]);
-        }).attr('fill', function (d) {
-            if (d.result == "lose")
-                return "#cc0000";
-            else
-                return "#0000cc";
-        }).on("mouseover", function (d) {
-            d3.select(this).transition().duration(200).attr('r', 8);
-        }).on("mouseout", function (d) {
-            d3.select(this).transition().duration(300).attr('r', 3.5);
-        }).append('title').text(
-            function (d) {
-
-                console.log("tittle added");
-
-                var result;
-                if (d.result == "win")
-                    result = "Match Won";
+            // Plot the data as dots
+            dots = dotsG.selectAll('.dot').data(data);
+            dots.enter().append('circle').attr('class', 'dot').attr('r', 3.5);
+            dots.selectAll('title').remove();
+            dots.attr('cx', function (d) {
+                return x(d[xField]);
+            }).attr('cy', function (d) {
+                return y(d[yField]);
+            }).attr('fill', function (d) {
+                if (d.result == "lose")
+                    return "#FD5959";
                 else
-                    result = "Match Lost";
+                    return "#2E94B9";
+            }).on("mouseover", function (d) {
+                d3.select(this).transition().duration(200).attr('r', 8);
+            }).on("mouseout", function (d) {
+                d3.select(this).transition().duration(300).attr('r', 3.5);
+            }).append('title').text(
+                function (d) {
 
-                return d.playerName + '\nRuns: ' + d.runsScored
-                    + '\nBalls Faced: ' + d.ballsFaced + '\nResult: '
-                    + result
-            });
+                    console.log("tittle added");
 
-        dots.exit().remove();
+                    var result;
+                    if (d.result == "win")
+                        result = "Match Won";
+                    else
+                        result = "Match Lost";
 
-        d3.selectAll('circle').classed("shown", true);
-    });
+                    return d.playerName + '\nRuns: ' + d.runsScored
+                        + '\nBalls Faced: ' + d.ballsFaced + '\nResult: '
+                        + result
+                });
+
+            dots.exit().remove();
+
+            d3.selectAll('circle').classed("shown", true);
+        });
     return model;
 
     function brushed() {
@@ -386,6 +387,10 @@ function selectInningsByMatchId(matchIds) {
         });
     }
 
+    reloadDataForStack();
+}
+
+function reloadDataForStack() {
     //
     var playerCount = {};
     selectedMatchData.forEach(function (d) {
@@ -419,8 +424,6 @@ function selectInningsByMatchId(matchIds) {
             }
         })
     }));
-
-
 }
 
 function callScatterPlot() {
@@ -433,7 +436,6 @@ function callScatterPlot() {
 
 //responds to events such as team selection as well as opposition selection.
 function selectDataForTeamAndOpposition(team, opposition) {
-    console.log(team + ":" + opposition)
     d3.queue().defer(d3.csv, 'performanceTableEnhanced.csv', function (d) {
         if (d.team == team) {
             if (opposition == d.opposition || opposition.length == 0) {
@@ -447,33 +449,11 @@ function selectDataForTeamAndOpposition(team, opposition) {
     function loadData(error, data) {
         // Set the data.
         scatterPlot.data = data;
+        selectedMatchData = data;
+        reloadDataForStack();
     }
 }
 
-//used to wrap long texts of labels into multipe lines.
-function wrap(text, width) {
-    text
-        .each(function () {
-            var text = d3.select(this), words = text.text().split(/\s+/)
-                    .reverse(), word, line = [], lineNumber = 0, lineHeight = 1.1, // ems
-                y = text.attr("y"), dy = parseFloat(text.attr("dy")), tspan = text
-                    .text(null).append("tspan").attr("x", 0).attr("y", y)
-                    .attr("dy", dy + "em");
-            while (word = words.pop()) {
-                line.push(word);
-                tspan.text(line.join(" "));
-                if (tspan.node().getComputedTextLength() > width) {
-                    line.pop();
-                    tspan.text(line.join(" "));
-                    line = [word];
-                    tspan = text.append("tspan").attr("x", 0).attr("y", y)
-                        .attr("dy",
-                            ++lineNumber * lineHeight + dy + "em")
-                        .text(word);
-                }
-            }
-        });
-}
 
 // The main program that assembles the linked views.
 //
