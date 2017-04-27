@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * Created by nikoo28 on 4/6/17.
  */
-public class StreamTableGeneratorActuals {
+public class AStreamTableGeneratorActuals {
 
   public static void main(String[] args) throws IOException {
 

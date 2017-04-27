@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * Created by nikoo28 on 4/21/17.
  */
-public class StreamTableFilter {
+public class BStreamTableFilter {
 
   public static void main(String[] args) throws IOException {
 

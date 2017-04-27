@@ -1,0 +1,58 @@
+/* CSS for the visualization.*/
+
+#container {
+    top: 100px;
+    left: 10px;
+    right: 30px;
+    height:350px;
+}
+
+/* Style the visualization.
+ * This CSS is adapted from the
+ * D3 scatter plot example found at
+ * http://bl.ocks.org/mbostock/3887118 */
+
+body {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.dot {
+/*cursor: pointer;*/
+}
+
+/* The following CSS is for brushing,
+ * adapted from http://bl.ocks.org/mbostock/4343214 */
+
+.dot.unselected {
+    fill: lightgrey;
+    fill-opacity: 0;
+}
+
+.brush .extent {
+    stroke: gray;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
+
+div#container {
+    display: flex;
+}
+
+.fixed{
+    width: 50%;
+}
+.flex-item{
+    flex-grow: 1;
+}
+
+div#barChart {
+	overflow: scroll;
+	width: 685px;
+}
