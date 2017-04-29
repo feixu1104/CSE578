@@ -298,7 +298,7 @@
 
 % *** SUBFIGURE PACKAGES ***
 %\ifCLASSOPTIONcompsoc
-%  \usepackage[caption=false,font=footnotesize,labelfont=sf,textfont=sf]{subfig}
+% \usepackage[caption=false,font=footnotesize,labelfont=sf,textfont=sf]{subfig}
 %\else
 %  \usepackage[caption=false,font=footnotesize]{subfig}
 %\fi
@@ -335,7 +335,7 @@
 % http://www.ctan.org/tex-archive/macros/latex/base/
 
 
-%\usepackage{stfloats}
+\usepackage{stfloats}
 % stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
 % the ability to do double column floats at the bottom of the page as well
 % as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
@@ -619,12 +619,12 @@ Rahul Aakunuru (1209394573) Nikhil Lohia (1211168085)}
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-Cricket is a game played in over a hundred countries worldwide and One Day International (ODI) is one of the most popular forms played. In this paper, we aim to find ways to effectively visualize the data generated from ODI matches. We have created four visualizations in which we explore team performance, player performance, and the relationships between the two. Our visualizations include a bar chart, a scatter plot, a histogram, and a stacked area chart. A combination of all the visualizations forms a system which aims to provide a better insight to the games by showing what kinds of players are on teams, how they contribute to the success of their teams, and how teams perform again each other. 
+Cricket is a game played in over a hundred countries worldwide; One Day International (ODI) is one of the most common forms played. Cricket enthusiasts may be interested in an easy-to-use method to see how their favorite team has been performing throughout the years, while sports analysts may be interested in seeing the trends of different teams' performances throughout the years. In this paper, we examine the effectiveness of various visualization techniques for data generated from ODI matches between 2006 and 2017. We had created four visualizations through which users may explore team performance, player performance, and the relationships among the two. The visualizations are interactive. Users may sort and filter the data to see only the information that is meaningful to them. Our visualizations comprise a bar chart, a scatter plot, a histogram, and a stacked area chart. By combining the visualizations, we had formed a system to provide users better insight to the games. This system allows them to see different players' proficiency, their contributions to the success of their teams, and how those teams perform against one another. Finally, we present case studies to give evidence for the applicability and merits of our proposed visualization techniques.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-Cricket, Performance, Visualization types, scatter plot, histogram
+Cricket, Performance, Visualization types, scatter-plot, histogram
 \end{IEEEkeywords}}
 
 
@@ -687,10 +687,15 @@ Cricket, Performance, Visualization types, scatter plot, histogram
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-\IEEEPARstart {C}{ricket} is an extremely popular game around the world. To put this in perspective, there were an estimated $2.2$ billion viewers watching the game during the ICC Cricket World Cup $2011$. With cricket becoming extremely fast paced and increasingly competitive, performance analysis is steadily making its way into the teams dressing rooms. Data visualization and data analysis in cricket has increasingly become a critical part of the game. For instance, players can try to become technically better by analyzing their own performances. Second, teams can make plans for their upcoming matches by analyzing the performance of their competitors. Third, Selectors can analyze team performance to select appropriate teams. Finally, the International Cricket Council can analyze trends to maintain the level of the games taking place. Our project aims to further investigate many such metrics that may affect the performance of a team or the popularity of the game. We present our visualizations in a way that they tell a story to the end user and let them understand how the game has progressed over the past years, in addition to how the teams have gone about looking at their performance. We try to present a visual narrative that is ``an account of a series of events, facts, etc., given in order and with the establishing of connections between them''.\cite{basar1995dynamic}
+\IEEEPARstart {C}{ricket} is an extremely popular game around the world. To put this in perspective, there were an estimated $2.2$ billion viewers watching the game during the ICC Cricket World Cup $2011$. With cricket becoming extremely fast paced and increasingly competitive, performance analysis is steadily making its way into the teams dressing rooms. Data visualization and data analysis in cricket has increasingly become a critical part of the game. For instance, players can try to become technically better by analyzing their own performances. Second, teams can make plans for their upcoming matches by analyzing the performance of their competitors. Third, Selectors can analyze team performance to select appropriate teams. Finally, the International Cricket Council can analyze trends to maintain the level of the games taking place. Our project aims to further investigate many such metrics that may affect the performance of a team or the popularity of the game. We present our visualizations in a way that they tell a story to the end user and let them understand how the game has progressed over the past years, in addition to how the teams have gone about looking at their performance. We try to present a visual narrative that is ``an account of a series of events, facts, etc., given in order and with the establishing of connections between them''.\cite{narrative}\\
+
+Each game of cricket can generate a lot of data that can be difficult to comprehend and analyze without some sort of visual representation. Thus, we have created a system of four interactive data visualizations in which users can explore team and player performance and discover underlying trends in the data. To start, we discuss current related work that deals with analysis and information visualization of sports statistics from various sports like baseball and soccer. Second, we explain the source of our data, the characteristics of the data, the relevant parts of the data, and how we aggregated and cleaned the data to enable our visualizations. This is followed by a detailed description of our approach in which we explain our techniques their applicability. Third, we introduce our data visualization tool and describe its features. We explain how users can use the tool to get valuable insights from the data. Finally, we discuss a usability survey that was carried out to evaluate our approach and its effectiveness.
 
 \section {Related Works}
-Several papers exist that relate to what we have studied. We will examine some in the following sections.
+With the increase in the use of technology in games like cricket, a lot of data is being collected. Exploring such data and finding patterns or insights will help analyze players performance and their effect on match outcomes. This indeed helps the teams to develop a strategy and tactics to win a game. Charles Perin at al.\cite{soccer} has visualized soccer data in which they provide the design guidelines for different facet views and their layout in spacio-temporal flow. This will help experts to quickly look at the game and find the phase where the game can turn around.\\
+
+\indent Prasant Nair has built a predictive model for Cricket game\cite{cricket}, where he predict the outcome of the game based on ball-by-ball real time scores. But he has used visualization to detect the correlation and coordination between different variable. This didn't give any insights about the game or about the players.
+We went through bunch of visualizations and best practices used in visualization to effectively communicate the insights of game in general and cricket in particular
 
 \subsection{Baseline Bar Display for Scores and Margin}
 Andy Cox and John Stasko have created a baseline bar display in their sportsViz\cite{sportsvis} system to visualize the scores in a baseball match and the margin by which a team has won or lost. In their system, they have functionality to sort the data by runs or margin. In cricket, we have similar statistics called runs and margin of runs by which the team can win or lose. We have used similar design to visualize the runs scored by a team. Since we have multiple visualizations in our systems, we allow user to select each bar and the other visualizations will be updated accordingly.
@@ -705,9 +710,14 @@ The Scatter plot tells how good of a batsman a team has, but it doesn't allow us
 Along with team's performance and player's impact on team, it is important to look at the player's performance over the years. We could use histogram for each player where length of each bar in histogram is proportional to the runs scored by the player and show the histogram of different players in multiple views. This kind of visualization will give the player's performance over the years, but it will be difficult for the user to compare the performance between players. Theme-river\cite{themeriver} works better for these kind of visualizations. The width of the theme is consistent with the number of runs scored by a batsman and it connects the value with runs scored in before year with a smooth curve which will be visually pleasing. The horizontal flow represents the flow of time and the color currents within the river represents the player's data. But theme river doesn't give us the percentage of runs scored a player in total runs scored by top $10$ players because theme-river expands on top and bottom part of x-axis. And hence we have choose Stacked area chart\cite{stackedgraph1} which reduces the variation is graph making it easy to read and compare the values
 
 \section {Design Principles}
-The amount of information that can be represented on a unit area of screen is very limited and with increasing it data becomes harder to fetch relevant insights from it. Showing all the data at once can cause confusions and make the judgment even harder. The main goal of our design is to compare team vs team performance and how each player makes an impact on the outcome. To achieve this we visualize one team at a time and then add the option to compare it with another. The process can be summarized as:
-\includegraphics[width=8cm]{design_process.png}\\
-\indent We start with raw data obtained from Cricsheet and transform it to a $csv$ format. Since data loss is inevitable, we choose to abstract attributes explicitly based upon the target audience. Our visualization caters to $2$ types of audiences
+The amount of information that can be represented on a unit area of screen is very limited and with increasing it data becomes harder to fetch relevant insights from it. Showing all the data at once can cause confusions and make the judgment even harder. The main goal of our design is to compare team vs team performance and how each player makes an impact on the outcome. To achieve this we visualize one team at a time and then add the option to compare it with another.\\
+
+\noindent The process can be summarized as:
+\begin{figure}[ht]
+\includegraphics[width=8cm]{design_process.png}
+\caption{Design process}
+\end{figure}\\
+\indent We start with raw data obtained from Cricsheet\cite{cricsheet} and transform it to a $csv$ format. Since data loss is inevitable, we choose to abstract attributes explicitly based upon the target audience. Our visualization caters to $2$ types of audiences
 \begin{itemize}
 \item A sports journalist who wants to analyze a team’s performance
 \item A fan who wishes to discover trends of his/her favorite team.
@@ -719,17 +729,90 @@ Keeping it in mind, we discover the relevant insights they would be interested i
 \item Team vs Team metrics
 \item Compare the performance of players against different oppositions.
 \end{itemize} 
-\indent A good visualization is one which has interactivity and makes the comparison engaging. We present the viewer with data controls and let them uncover things on their own. Based upon these reasonings we follow $2$ main design principles. Firstly, the user should be able to select the teams to compare. Secondly, the user should be able to interact with the visualization to get additional insights in his area of interest.
+\indent A good visualization is one which has interactivity and makes the comparison engaging. We present the viewer with data controls and let them uncover things on their own. Based upon these reasonings we follow $2$ main design principles. Firstly, the user should be able to select the teams to compare. Secondly, the user should be able to interact with the visualization to get additional insights in his area of interest.\\
+
+\indent As per the guidelines of Kuchinsky et al. \cite{multipleviews} multiple views are used when there is diversity in attributes and level of abstraction. It was also recommended to use Multiple views when different view brings out correlation or disparity or when we want to break down the complex data into multiple manageable chunks and provide insights. In our cricket data, we have attributes like player names, player country, runs scored etc. where the attributes are very diverse and we have different level of abstraction at game level and at player level. Although the dimension of data is not very high, we want to break it down to provide insights of game. And hence we have chosen to use multiple views instead of using single view and overwhelm the user.\\
+
+\indent Kuchinsky et al. \cite{multipleviews} has suggested the way in which multiple views can be used. Our system is in consistent with the rules specified and we have placed multiples views close to each other to optimize time and space and views are kept consistence.\\
+
+\indent The multiple views which we have provided are not isolated, but they have relationship between them. These relationships are utilized by co-ordination. ``Coordination is apparent foremost when user interaction comes into play''.\cite{multipleviews2} Maximilian Scherr in his paper ``Multiple and coordinated views in Information Visualization''\cite{multipleviews2} talks about the work of North and Schneiderman’s Snap-together visualization\cite{snap} where they talk about the way to give a user the ability to explore the data and coordination between the views.\\ 
+
+\indent According to this model, the system need to have a relational database and user is given opportunity to query the database and once he does that, the existing views should be updated. Coordination is done by bringing all the updated visualization together and creating a snap version of the system. Although our system doesn't have relational database at back end, we have created multiple files on which the user can query. Based on the user's query, we load the appropriate file and update the views of each visualization and present the snap of the system to user.\\
+
+\indent The outcome of the matches will be win or lose, which are categorical variable but can be thought of binary variables. For the variables which are binary in nature, we used binary color scheme which differs in the hue.\cite{colorscheme}
 
 
 \section {System}
 
 \subsection {Data}
-\indent A single game of Cricket generates a huge amount of data. One game of two teams consists of three hundred deliveries divided into fifty overs each. Each delivery can result into scoring runs ranging from zero to six scored by eleven different batsmen. We can aggregate this data at many levels along this hierarchy and create several interactive visualizations. The user is served into exploring data with respect to a particular team against an opponent. For example, we can explore the insights when Australia plays against India. We leverage the ball by ball data obtained from Cricsheet. From this data we extract the outcome of each game, teams involved, and the runs scored by each player over the years. This creates a large collection of data for several players and teams. For example, we get a data on over $30,000$ different innings played over the time. Furthermore, this data is annotated by attributes like balls faced and runs scored.\\
+\indent A single game of Cricket generates a huge amount of data. One game of two teams consists of three hundred deliveries divided into fifty overs each. Each delivery can result into scoring runs ranging from zero to six scored by eleven different batsmen. We can aggregate this data at many levels along this hierarchy and create several interactive visualizations. The user is served into exploring data with respect to a particular team against an opponent. For example, we can explore the insights when Australia plays against India. We leverage the ball by ball data obtained from Cricsheet\cite{cricsheet}. From this data we extract the outcome of each game, teams involved, and the runs scored by each player over the years. This creates a large collection of data for several players and teams. For example, we get a data on over $30,000$ different innings played over the time. Furthermore, this data is annotated by attributes like balls faced and runs scored.\\
+
 \indent Limited by the scope of this project, we focus only on the runs scored by a team and a batsmen as it has been proved to affect the outcome of a game. `\textit{Strike Rate}' is a major factor which determines the performance of the player and is defined as:
 \begin{equation*}
 Strike\ Rate = \frac{Runs\ Scored}{Balls\ Faced}
 \end{equation*}
+
+\subsection {Implementation}
+The entire dataset is obtained from Cricsheet\cite{cricsheet} as a YAML file for each game. The YAML file contains the data in the following format and we have around 1300 files for the matches played.
+\begin{verbatim}
+info:
+  city: Mumbai
+  dates:
+    - 2006-06-13
+  match_type: ODI
+  outcome:
+    by:
+      runs: 38
+    winner: England
+  overs: 50
+  player_of_match:
+    - ME Trescothick
+  teams:
+    - India
+    - England
+  toss:
+    decision: bat
+    winner: England
+  umpires:
+    - R Dill
+    - DB Hair
+  venue: 'Wankhede Stadium'
+innings:
+  - 1st innings:
+      team: England
+      deliveries:
+        - 0.1:
+            batsman: ME Trescothick
+            bowler: Anil Kumble
+            non_striker: EC Joyce
+            runs:
+              batsman: 0
+              extras: 0
+              total: 0
+\end{verbatim}
+Each file is parsed and we create 3 types of csv files
+\begin{itemize}
+\item matchTable.csv
+\begin{verbatim}
+match_id,team_1,team_2,
+team_1_runs,team_2_runs,
+outcomeBy,outcomeByValue,winner,date
+\end{verbatim}
+\item performanceTable.csv
+\begin{verbatim}
+match_id,playerName,runsScored,
+ballsFaced,team,result,opposition
+\end{verbatim}
+\item streamTable.csv
+\begin{verbatim}
+playerName,runsScored,date,
+team,opposition
+\end{verbatim}
+\end{itemize}
+These files are then ingested into the system to perform visualizations.\\
+
+\indent We  performed  several  tests  to  analyze  the performance  and  behavior  of  several  of  our  design decisions   and   our   prototype   implementation.   Our
+prototype  system  was  written  as  a  JAVASCRIPT application using D3\cite{d3} and C3\cite{c3} libraries and some helper libraries like `d3-queue'\cite{q} to resolve asynchronous issues.  Our prototype was tested on Google Chrome running Apache Tomcat server in a  machine  with  an  Intel  i5-3770k  processor,  8GB  of RAM,  and  an  NVIDIA  GTX  670  graphics  card,  all under Windows 7 64-bit. Our system work best for screen resolution 1280 x 800 and when chrome window is maximized.
 
 \subsection {Layout}
 Our system is comprised of four modules that visualize team and player performance. We have primarily used the number of runs scored as the metric to measure the performances of the players as well as the impact it has on the overall performance of the team. In our system, we provide the user with two drop-down menus, that list the names of the various cricket playing nations. These drop downs provide an effective way of filtering the results based on a team and the opposition it has played against. The first drop-down allows users to select a country for which they would like to view the team and player performances, the second, optional drop-down allows users to narrow results by selecting a single country that has played against the first country. By default the second drop down is set to show the results against all the oppositions.
@@ -739,35 +822,175 @@ Our system is comprised of four modules that visualize team and player performan
 
 \subsubsection {Bar charts}
 The first visualization contains two parallel bar charts (positioned one below another) which can be used to analyze a team’s performance using their runs score. The first chart shows the number of runs scored by the team in a time-line fashion. The x-axis contains an ordinal scale with match dates while the y-axis contains the scores (runs). The second chart shows the margin by which the team has won or lost in each match. The length of the each bar in both charts represents the score or margin respectively. In case the team won the match while batting second, the margin is taken to be one. The color of each bar shows whether the match was won or lost. \\
+
 \indent The visualization also has a sorting feature which allows users to sort matches by date, runs score, or margin of runs scored. The sorting mechanism is useful and really effective in arriving at the conclusions such as, what is a safe score for a team if batting second, what is the probability that a team would successfully defend or chase a target set by the opposition. \\
-\indent Filtering based on the margin of runs helps us understand whether the team plays too many close games. This could be due to the fact that the team loses out in the critical points in the game. South Africa for instance has always had the tag of being ``Chokers'' as they have been known to be a team that loses important matches at in-spite of being one of the best teams in the world.\\
+
+\indent Filtering based on the margin of runs helps us understand whether the team plays too many close games. This could be due to the fact that the team loses out in the critical points in the game.\\
+
 \indent Another valuable insight that can be derived by sorting the data based on the margin is to gaze whether the team's performance has been increasing, if the margins have been decreasing, or vice versa.\\
-\indent Using these sorting features along with the second drop down to select the opposition, can help us understand how the team has been performing against different oppositions.\\ \\
+
+\indent Using these sorting features along with the second drop down to select the opposition, can help us understand how the team has been performing against different oppositions. Fig \ref{fig:bar_chart} shows a bar chart for India\\ \\ 
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{bar_chart.png}
+\caption{Bar chart for Team India}
+\label{fig:bar_chart}
+\end{figure}
+
 The next two visualizations in our system combine to make a multiple linked view. Using the data visualization technique of brushing, we linked a scatter-plot with a histogram.
  
 \subsubsection {Scatter-plot}
-A scatter-plot is used to depict the relationship between the number of balls faced by a batsman in innings and the runs they scored. The x-axis contains the number of balls in an inning faced by the batsmen and the y-axis contains the number of runs scored. The relationship between these two values is known as a ``strike rate'' in cricket. Scoring a lot of runs in the game is as important as the number of balls faced in scoring those runs. Thus, the players who score a lot at an extremely fast rate are considered to be more valuable players when compared to players who make a lot of runs at a slower rate. Essentially, each point in the scatter-plot will represent an inning played by player in terms of their strike rate. \\
+A scatter-plot is used to depict the relationship between the number of balls faced by a batsman in innings and the runs they scored. The x-axis contains the number of balls in an inning faced by the batsmen and the y-axis contains the number of runs scored. The relationship between these two values is known as a ``strike rate'' in cricket. Scoring a lot of runs in the game is as important as the number of balls faced in scoring those runs. Thus, the players who score a lot at an extremely fast rate are considered to be more valuable players when compared to players who make a lot of runs at a slower rate. Essentially, each point in the scatter-plot will represent an inning played by player in terms of their strike rate. Fig \ref{fig:scatter_plot} shows the scatter-plot for each innings played by the players of Team India.
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{scatter_plot.png}
+\caption{Scatter-plot for Team India}
+\label{fig:scatter_plot}
+\end{figure}
+
 \indent The points in the scatter-plot are color-coded; the color of a point represents the outcome of the match in which the inning (i.e. the point of interest) was played. Blue is used to represent a win while red is used to represent a loss. For example, a point depicting the strike rate of Player A will be blue if the team had won the particular match. Color-coding the scatter-plot help us find an underlying relationship between a player’s performance and the outcome of the match.\\
+
 \indent On each point in the scatter-plot, we show a tool-tip which gives additional information such as the corresponding player name, the player’s runs scored, and the number of balls faced by the player.\\
-\indent The scatter-plot also has an option to select a range of points (brushing). When a set of points is selected in the scatter-plot, a dataset is generated with all the points in the selected area and passed to a histogram. that would visualize a stacked bar graph for each player for whom a point is found in the selection. The stacked bar will represent the number of points in the selected area for a lost cause vs winning cause for a player.
+
+\indent The scatter-plot also has an option to select a range of points (brushing). When a set of points is selected in the scatter-plot, a dataset is generated with all the points in the selected area and passed to a histogram. that would visualize a stacked bar graph for each player for whom a point is found in the selection. The stacked bar will represent the number of points in the selected area for a lost cause vs winning cause for a player. Fig \ref{fig:scatter_plot_brushing} shows the brushing feature in the scatter-plot.
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{scatter_plot_brushing.png}
+\caption{Brushing in scatter plot}
+\label{fig:scatter_plot_brushing}
+\end{figure}
 
 
 \subsubsection {Stacked Bar}
 The stacked bar chart is designed to visualize player frequencies that will be retrieved from the dataset mentioned above. For example, if two points are selected in the scatter-plot and both correspond with strike rates of player ``X'', the histogram will contain a bar for player ``X'' with a height of two. This visualization is aimed at understanding how a particular player's performance affects the success of his team. A stacked bar in the chart represents the count of innings found in the selection made in the data visualized in the scatter plot. Each bar will be stacked based on the number of innings that were played in a lost cause against the number of innings played where the team won the game.\\
-\indent `Finishers' is a term often used to  describe  a player who has the ability to stay `not out' till the end of the game and thus himself lead the team to a win. These players often have to face the pressure situation in a game. Players like the Indian Cricket team captain \textit{Mr M.S. Dhoni} and \textit{Suresh Raina} have made a name for themselves to be one of the best finishers in the game. The visualization not only helps us verify these facts but also help us find other such players who may not have received the due credit.\\
-\indent When used with the opposition filter, this visualization also helps us identify how certain players play against different oppositions. For instance, even though the legend \textit{Sachin Tendulkar} has higher number of runs against `Pakistan', it is actually \textit{Yuvraj Singh} whose innings have helped India win $100\%$ of games whenever he has scored a score of 80 or more in a game. Interestingly, \textit{Yuvraj Singh} has had just one inning of $80$ or more against another opposition `New Zealand'.
 
+\indent `Finishers' is a term often used to  describe  a player who has the ability to stay `not out' till the end of the game and thus himself lead the team to a win. These players often have to face the pressure situation in a game. Fig \ref{fig:stacked_bar_chart} shows the stacked bar chart for Team India.\\
 
+\begin{figure}[ht]
+\includegraphics[width=9cm]{stacked_bar_chart.png}
+\caption{Stacked Bar Chart}
+\label{fig:stacked_bar_chart}
+\end{figure}
+
+\indent When used with the opposition filter, this visualization also helps us identify how certain players play against different oppositions.
 
 \subsubsection {Stacked Area Chart}
-Stacked area chart is an extremely effective visualization in visualizing the performance of the team based on the sum of the number of runs, the players of the team, have been scoring each year. Stacked area chart also provides an effective means of analyzing the contribution made by a key batsman in the total number of runs scored. This visualization is useful in understanding when the team has peaked and coinciding this with the important tournaments played over the years gives us an understanding of the results of a lot them. \\
-\indent For instance, team India performed really well in the years $2011$ and $2013$, the same time that they won the Cricket World cup and the ICC Champion’s trophy, two of the most prestigious trophies in cricket. New Zealand, who had an extraordinary year as a team in the year $2015$, reached the finals of the Cricket World Cup for the first time ever in the history of the tournament.\\
-\indent Not only this, the visualization also helps us understand the effect that the retirement of the important players has on a team. In the year $2016$, when three of the most prolific batsmen of `Sri Lanka', \textit{Mr. M. Jayawardene}, \textit{Mr K. Sangakara} and \textit{Mr T. Dilshan} retired, their performance as a team went to an all time low in the last $10$ years.\\
-\indent This visualization also helps analyze how the careers of individual players have evolved over the years. From the debuts and retirements of the players to injuries, that led to a temporary lapse in the performance of a player, can all be visualized using this visualization.
+Stacked area chart is an extremely effective visualization in visualizing the performance of the team based on the sum of the number of runs, the players of the team, have been scoring each year. Stacked area chart also provides an effective means of analyzing the contribution made by a key batsman in the total number of runs scored. This visualization is useful in understanding when the team has peaked and coinciding this with the important tournaments played over the years gives us an understanding of the results of a lot them. Fig \ref{fig:stacked_area_chart} shows a stacked area chart for performance of Team India over the years.\\
 
+\begin{figure}[ht]
+\includegraphics[width=9cm]{stacked_area_chart.png}
+\caption{Stacked Area Chart for Team India}
+\label{fig:stacked_area_chart}
+\end{figure}
+
+\indent Not only this, the visualization also helps us understand the effect that the retirement of the important players has on a team.
+
+\indent This visualization also helps analyze how the careers of individual players have evolved over the years. From the debuts and retirements of the players to injuries, that led to a temporary lapse in the performance of a player, can all be visualized using this visualization. Fig \ref{fig:stacked_area_details} shows the run details by each player of Team India in the year 2013.
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{stacked_area_details.png}
+\caption{Details on demand for Team India in 2013}
+\label{fig:stacked_area_details}
+\end{figure}
 
 \section {Results}
-The results go here.
+As we have seen so far, this visualization is aimed at analyzing the performance of the teams over the last $10$ years. The visualization also tries to identify how the performance of certain players affects the overall team performance more than the others. While analyzing this data, we consider the performance of the batsmen of a team as the key indicator of their performances. Specifically, we use the metric ``Strike Rate'' to quantify the performances of the players. \\
+Using this visualization, we have been able to 
+\begin{enumerate}
+\item Explain why, or how the team performed in a specific way at a period 
+\item Derive at facts that have thus far not been popular in the cricket fraternity. 
+\end{enumerate}
+We present below, a case study of some specific scenarios where the visualization has helped us achieve the results mentioned above.
+
+\subsection{What has been a defend-able total for a team?}
+By using the simple sort by runs feature in the bar graph representing the runs made by team in each of their matches, we can derive at a very interesting conclusion. When we attempt to understand this metric for different teams, we see that most of the teams do not have an evident score beyond which they win a hundred percent of their matches. The only exception to this is South Africa. We can clearly see that South Africa wins all their games when they score beyond $300$. It is also interesting to see how Australia, often considered to be the best team in the world has lost the match they scored the highest in, along with several others where their scores were at the higher end of the spectrum. Even more interesting is the fact, that most of these high scoring games that Australia has lost are against South Africa. 
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{south_africa_against_all.png}
+\caption{South Africa against all}
+\label{fig:south_africa_against_all}
+\end{figure}
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{australia_against_all.png}
+\caption{Australia against all}
+\label{fig:australia_against_all}
+\end{figure}
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{australia_against_southAfrica.png}
+\caption{Australia against South Africa}
+\label{fig:australia_against_southAfrica}
+\end{figure}
+
+\subsection{What have been the causes for some of the exceptionally good and exceptionally bad periods of performance of a team?}
+This case presents itself as a unique study of how the omission of some of the important players of the teams may explain why the team had a slump in their performance at a particular period. For instance, in the year $2016$, when three of the most prolific batsmen in the Sri Lankan cricket team, \textit{Jayawardene}, \textit{Sangakara} and \textit{Dilshan}, retired, their performance as team went down to an all time low in the last $10$ years.
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{sri_lanka_case.png}
+\caption{Performance of Sri Lanka over the years}
+\label{fig:sri_lanka_case}
+\end{figure}
+
+A similar situation happened with India in the year $2012$ when \textit{Sachin Tendulkar} retired while \textit{Virendra Sehwag} and \textit{Yuvraj Singh} were left out of the team due to inconsistent performances and injury issues respectively. \indent Though this may be a self-explaining scenario, what is important to see is what happened after this slump in the performances. It is interesting to see that India emerged out even better in the following year with $2013$ being their best year in terms of performance in the last $10$ years, `Sri Lanka' is still struggling to find their footing since. This fact sheds a lot of light on the planning done by the team managements on phasing out the players of the team as well keeping a strong bench strength ready at all times. Bench Strength is a term used to describe the how good a set of backup players does a team have.
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{india_case.png}
+\caption{Performance of India over the years}
+\label{fig:india_case}
+\end{figure}
+
+\subsection{How were the champions made?}
+This case helps explain why certain teams have performed exceptionally well in some tournaments. India who were the winners of the International Cricket World Cup in the year $2011$ and the winners of the ICC Champions trophy in $2013$ were at the top of their performance in both those years. They however could not defend their title of the world champions in $2015$ due to an indifferent performance by the team. On the other hand, \textit{New Zealand} had an exceptionally good year as a team in $2015$ which resulted in them being one of the finalists in the World Cup. This was the first time ever that New Zealand had reached the finals in the tournament.
+\begin{figure}[ht]
+\includegraphics[width=9cm]{india_case3.png}
+\caption{Performance of India over the years}
+\label{fig:india_case3}
+\end{figure}
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{newzealand_case3.png}
+\caption{Performance of New Zealand over the years}
+\label{fig:newzealand_case3}
+\end{figure}
+
+\subsection{Who are the real match winners in the team?}
+Selecting all the top scoring matches of the team India we can view the innings played by their batsmen in the scatter-plot. On brushing the area, selecting the scores of $100$ or more, we can view how many times each batsman has played an innings that lies in that area in the stacked bar chart. \textit{Sachin Tendulkar}, often considered as the `God of Cricket' in India, does his reputation no good as he is the only one to have played big innings in a lost cause for India. We can also clearly see how \textit{Virender Sehwag} appears to be the one to contribute maximum towards the success of the team.
+\begin{figure}[ht]
+\includegraphics[width=9cm]{case4.png}
+\caption{Performance of Indian players at a glance}
+\label{fig:case4}
+\end{figure}
+Another important find that we came across is to identify the real finishers for the teams. Finishers are the players who usually play towards the end of the innings in high pressure situations and often are the ones that take the team through. \textit{MS Dhoni} is often tagged to be the best finisher in the history of the game. We wanted to contrast his performances against some of the other players who may have played a similar part but may not have received their due credit in the process. \\
+\indent To select the finishers, we select the area with the range of runs between $40 - 90$ and the range of balls played in the range of $0 - 60$. This window was chosen as this range of runs is the minimum to have a significant effect on the game and the range of balls played lets us select players who have scored at a rate of more than a run a ball. \\
+\indent We came across a startling discovery to find that another player from the same team, \textit{SK Raina}, has in fact had as many number of innings in the matches that India has gone on to win. The important thing to note is that his win – loss ratio is far lesser compared to the `all time finisher' \textit{Mr. MS Dhoni}.
+\begin{figure}[ht]
+\includegraphics[width=9cm]{case4_2.png}
+\caption{Performance of MS Dhoni and SK Raina}
+\label{fig:case4_2}
+\end{figure}
+
+
+\subsection{How do players fare against different oppositions}
+In this scenario, we tried to find out how different players have performed against different oppositions. We have made some interesting discoveries here as well. When selecting all the matches played between India and Pakistan, we see how different players of India have performed against this opposition. \textit{Sachin Tendulkar} though again emerges as the player with the maximum number of scores in the range of $70$ or more has a $3:2$ win-loss ratio. On the other hand, \textit{Yuvraj Singh} has had $4$ such innings with India winning all these games. When we change the opposition to `New Zealand', \textit{Yuvraj Singh's} contribution comes down to just one successful inning. He also has a dismal record against `Australia'. Interestingly, \textit{Rohit Sharma} appears to have done well in terms of his performances against `Australia', but those innings have only led to a win-loss ratio of $4:3$.
+\begin{figure}[ht]
+\includegraphics[width=9cm]{case5_1.png}
+\caption{India vs Pakistan}
+\label{fig:case5_1}
+\end{figure}
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{casr5_2.png}
+\caption{India vs New Zealand}
+\label{fig:casr5_2}
+\end{figure}
+
+\begin{figure}[ht]
+\includegraphics[width=9cm]{case5_3.png}
+\caption{India vs Australia}
+\label{fig:case5_3}
+\end{figure}
+There are a few more metrics that go on to decide the outcome of a game, but it is interesting to see how with just the batting metric we can explain so many trends and results with respect to the teams. It can be an interesting endeavor to correlate our findings with some of the other metrics in the game.
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
@@ -868,7 +1091,11 @@ The results go here.
 
 
 \section{Conclusion}
-The conclusion goes here.
+We have presented a system that analyzes a team’s match plan by following Ben Shneiderman's information-seeking mantra\cite{mantra}. Namely, we proposed analysis and visualization techniques that follow the steps ``overview first'' (Scatter Plot), ``zoom and filter'' (Brushing and sorting bar chart), and ``detail-on-demand'' (Histogram and stacked area chart). We focused on the fixed parameter of strike rate of a player. However, there still exists a challenge to extract information and gain insights from bowling statistics of a team. Some teams are known for their exceptional spinners or for players who can conceive all the wickets in a game. Such players can heavily impact the outcome of a game. In the future, we plan to integrate bowling information in our visualization system.\\
+
+\indent Interactivity among the visualizations is a crucial part of our prototype. We integrated methods to analyze players’ performances over time. However, we may need to search  for  similar  player  behavior  on  more abstract levels. We may want to know how players adapt their behavior when playing with others on their teams; player partnership may be a very interesting area of analysis. \\
+
+\indent Aside from player strike rates, other important metrics to consider could be team behavior and team strategy. For example, a team could play offensive under one captain but defensive under another one. Thus, we may want to know how players perform under these kinds of conditions. Although we don’t currently have a defined approach to visualize strategies/tactics, doing a sentiment analysis could be a potential first step toward this problem.
 
 \bibliographystyle{plain}
 \bibliography{bibliography.bib}

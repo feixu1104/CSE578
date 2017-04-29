@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.12)  27 APR 2017 05:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.12)  27 APR 2017 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -210,7 +210,13 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(./bare_adv.aux)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/sttools/stfloats.sty
+Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
+ings
+\@dblbotnum=\count107
+\c@dblbotnumber=\count108
+)
+No file bare_adv.aux.
 \openout1 = `bare_adv.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 527.
@@ -225,20 +231,19 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 527.
 LaTeX Font Info:    ... okay on input line 527.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 527.
 LaTeX Font Info:    ... okay on input line 527.
-
 -- Lines per column: 61 (exact).
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
+\scratchcounter=\count109
 \scratchdimen=\dimen136
 \scratchbox=\box30
-\nofMPsegments=\count108
-\nofMParguments=\count109
+\nofMPsegments=\count110
+\nofMParguments=\count111
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count110
+\MPscratchCnt=\count112
 \MPscratchDim=\dimen137
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks22
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
@@ -325,102 +330,525 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <4.7678> on input line 690.
 
 
-LaTeX Warning: Citation `basar1995dynamic' on page 1 undefined on input line 69
-0.
+LaTeX Warning: Citation `narrative' on page 1 undefined on input line 690.
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 690--691
+\OT1/ppl/m/n/9.53561 ICC Cricket World Cup $\OT1/cmr/m/n/10 2011$\OT1/ppl/m/n/9
+.53561 . With cricket be-com-ing
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 690--691
+\OT1/ppl/m/n/9.53561 ex-tremely fast paced and in-creas-ingly com-pet-i-tive,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 690--691
+
+ []
+
+
+LaTeX Warning: Citation `soccer' on page 1 undefined on input line 695.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--696
+
+ []
+
+
+LaTeX Warning: Citation `cricket' on page 1 undefined on input line 697.
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 695.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 700.
 
-LaTeX Warning: Citation `sportsvis' on page 1 undefined on input line 696.
-
-
-LaTeX Warning: Citation `nbavis' on page 1 undefined on input line 699.
-
-
-LaTeX Warning: Citation `scatterplots1' on page 1 undefined on input line 702.
-
-
-LaTeX Warning: Citation `themeriver' on page 1 undefined on input line 705.
-
-
-LaTeX Warning: Citation `stackedgraph1' on page 1 undefined on input line 705.
+LaTeX Warning: Citation `sportsvis' on page 1 undefined on input line 701.
 
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
+
+LaTeX Warning: Citation `nbavis' on page 2 undefined on input line 704.
+
+
+LaTeX Warning: Citation `scatterplots1' on page 2 undefined on input line 707.
+
+
+LaTeX Warning: Citation `themeriver' on page 2 undefined on input line 710.
+
+
+LaTeX Warning: Citation `stackedgraph1' on page 2 undefined on input line 710.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 713--714
+
+ []
+
 <design_process.png, id=13, 894.34125pt x 231.86626pt>
 File: design_process.png Graphic file (type png)
 
 <use design_process.png>
-Package pdftex.def Info: design_process.png used on input line 709.
+Package pdftex.def Info: design_process.png used on input line 717.
 (pdftex.def)             Requested size: 227.62204pt x 59.01366pt.
+
+
+LaTeX Warning: Citation `cricsheet' on page 2 undefined on input line 720.
+
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 740.
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
 
-Underfull \hbox (badness 2538) in paragraph at lines 741--747
-[]\OT1/ppl/m/n/9.53561 Filtering based on the mar-gin of runs helps us
+Underfull \hbox (badness 10000) in paragraph at lines 732--733
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--747
+LaTeX Warning: Citation `multipleviews' on page 2 undefined on input line 734.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 734--735
+
+ []
+
+
+LaTeX Warning: Citation `multipleviews' on page 2 undefined on input line 736.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 736--737
 
  []
 
 [2 <./design_process.png>]
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
- [3]
-No file bare_adv.bbl.
-[4
 
-] (./bare_adv.aux)
+LaTeX Warning: Citation `multipleviews2' on page 3 undefined on input line 738.
+
+
+
+LaTeX Warning: Citation `multipleviews2' on page 3 undefined on input line 738.
+
+
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+
+LaTeX Warning: Citation `snap' on page 3 undefined on input line 738.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
+
+ []
+
+
+LaTeX Warning: Citation `colorscheme' on page 3 undefined on input line 742.
+
+
+LaTeX Warning: Citation `cricsheet' on page 3 undefined on input line 748.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
+
+ []
+
+
+LaTeX Warning: Citation `cricsheet' on page 3 undefined on input line 756.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 757.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 812--813
+
+ []
+
+
+LaTeX Warning: Citation `d3' on page 3 undefined on input line 815.
+
+
+LaTeX Warning: Citation `c3' on page 3 undefined on input line 815.
+
+
+LaTeX Warning: Citation `q' on page 3 undefined on input line 815.
+
+[3]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 823.
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 824--825
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--827
+
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 828--829
+[]\OT1/ppl/m/n/9.53561 Filtering based on the mar-gin of runs helps us
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 828--829
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 830--831
+
+ []
+
+
+LaTeX Warning: Reference `fig:bar_chart' on page 4 undefined on input line 832.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 832--833
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 832--833
+
+ []
+
+<bar_chart.png, id=25, 469.755pt x 178.7478pt>
+File: bar_chart.png Graphic file (type png)
+ <use bar_chart.png>
+Package pdftex.def Info: bar_chart.png used on input line 835.
+(pdftex.def)             Requested size: 256.0748pt x 97.43878pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 835--836
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:scatter_plot' on page 4 undefined on input line 8
+43.
+
+<scatter_plot.png, id=26, 677.53125pt x 343.2825pt>
+File: scatter_plot.png Graphic file (type png)
+ <use scatter_plot.png>
+Package pdftex.def Info: scatter_plot.png used on input line 846.
+(pdftex.def)             Requested size: 256.0748pt x 129.7468pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 846--847
+[][] 
+ []
+
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--852
+
+ []
+
+[4 <./bar_chart.png> <./scatter_plot.png>]
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+
+Underfull \hbox (badness 2951) in paragraph at lines 853--854
+\OT1/ppl/m/n/9.53561 tip which gives ad-di-tional in-for-ma-tion such as the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 853--854
+
+ []
+
+
+LaTeX Warning: Reference `fig:scatter_plot_brushing' on page 5 undefined on inp
+ut line 855.
+
+<scatter_plot_brushing.png, id=33, 1384.17125pt x 355.3275pt>
+File: scatter_plot_brushing.png Graphic file (type png)
+
+<use scatter_plot_brushing.png>
+Package pdftex.def Info: scatter_plot_brushing.png used on input line 858.
+(pdftex.def)             Requested size: 256.0748pt x 65.73454pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 858--859
+[][] 
+ []
+
+
+Underfull \hbox (badness 3492) in paragraph at lines 865--866
+\OT1/ppl/m/n/9.53561 fre-quen-cies that will be re-trieved from the dataset
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 865--866
+
+ []
+
+
+LaTeX Warning: Reference `fig:stacked_bar_chart' on page 5 undefined on input l
+ine 867.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 867--868
+
+ []
+
+<stacked_bar_chart.png, id=34, 699.61375pt x 357.335pt>
+File: stacked_bar_chart.png Graphic file (type png)
+
+<use stacked_bar_chart.png>
+Package pdftex.def Info: stacked_bar_chart.png used on input line 870.
+(pdftex.def)             Requested size: 256.0748pt x 130.79422pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 870--871
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:stacked_area_chart' on page 5 undefined on input 
+line 878.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--879
+
+ []
+
+<stacked_area_chart.png, id=35, 604.2575pt x 228.855pt>
+File: stacked_area_chart.png Graphic file (type png)
+
+<use stacked_area_chart.png>
+Package pdftex.def Info: stacked_area_chart.png used on input line 881.
+(pdftex.def)             Requested size: 256.0748pt x 96.98447pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 881--882
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:stacked_area_details' on page 5 undefined on inpu
+t line 888.
+
+<stacked_area_details.png, id=36, 629.35126pt x 259.97125pt>
+File: stacked_area_details.png Graphic file (type png)
+
+<use stacked_area_details.png>
+Package pdftex.def Info: stacked_area_details.png used on input line 891.
+(pdftex.def)             Requested size: 256.0748pt x 105.77966pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 891--892
+[][] 
+ []
+
+[5 <./scatter_plot_brushing.png> <./stacked_bar_chart.png> <./stacked_area_char
+t.png> <./stacked_area_details.png>]
+<south_africa_against_all.png, id=44, 469.755pt x 176.3388pt>
+File: south_africa_against_all.png Graphic file (type png)
+
+<use south_africa_against_all.png>
+Package pdftex.def Info: south_africa_against_all.png used on input line 909.
+(pdftex.def)             Requested size: 256.0748pt x 96.12561pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 909--910
+[][] 
+ []
+
+<australia_against_all.png, id=45, 469.755pt x 178.7478pt>
+File: australia_against_all.png Graphic file (type png)
+
+<use australia_against_all.png>
+Package pdftex.def Info: australia_against_all.png used on input line 915.
+(pdftex.def)             Requested size: 256.0748pt x 97.43878pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 915--916
+[][] 
+ []
+
+<australia_against_southAfrica.png, id=46, 469.755pt x 172.0026pt>
+File: australia_against_southAfrica.png Graphic file (type png)
+
+<use australia_against_southAfrica.png>
+Package pdftex.def Info: australia_against_southAfrica.png used on input line 9
+21.
+(pdftex.def)             Requested size: 256.0748pt x 93.76186pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 921--922
+[][] 
+ []
+
+<sri_lanka_case.png, id=47, 469.755pt x 198.0198pt>
+File: sri_lanka_case.png Graphic file (type png)
+ <use sri_lanka_case.png>
+Package pdftex.def Info: sri_lanka_case.png used on input line 930.
+(pdftex.def)             Requested size: 256.0748pt x 107.94434pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 930--931
+[][] 
+ []
+
+<india_case.png, id=48, 459.6372pt x 189.3474pt>
+File: india_case.png Graphic file (type png)
+ <use india_case.png>
+Package pdftex.def Info: india_case.png used on input line 938.
+(pdftex.def)             Requested size: 256.0748pt x 105.49063pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 938--939
+[][] 
+ []
+
+<india_case3.png, id=49, 469.755pt x 185.9748pt>
+File: india_case3.png Graphic file (type png)
+ <use india_case3.png>
+Package pdftex.def Info: india_case3.png used on input line 946.
+(pdftex.def)             Requested size: 256.0748pt x 101.37837pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 946--947
+[][] 
+ []
+
+[6 <./south_africa_against_all.png> <./australia_against_all.png> <./australia_
+against_southAfrica.png> <./sri_lanka_case.png>]
+<newzealand_case3.png, id=57, 457.2282pt x 192.72pt>
+File: newzealand_case3.png Graphic file (type png)
+
+<use newzealand_case3.png>
+Package pdftex.def Info: newzealand_case3.png used on input line 952.
+(pdftex.def)             Requested size: 256.0748pt x 107.93422pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 952--953
+[][] 
+ []
+
+<case4.png, id=58, 469.755pt x 263.5446pt>
+File: case4.png Graphic file (type png)
+ <use case4.png>
+Package pdftex.def Info: case4.png used on input line 960.
+(pdftex.def)             Requested size: 256.0748pt x 143.66313pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 960--961
+[][] 
+ []
+
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no “ in font pplr7t!
+<case4_2.png, id=59, 469.755pt x 150.3216pt>
+File: case4_2.png Graphic file (type png)
+ <use case4_2.png>
+Package pdftex.def Info: case4_2.png used on input line 968.
+(pdftex.def)             Requested size: 256.0748pt x 81.94313pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 968--969
+[][] 
+ []
+
+<case5_1.png, id=60, 469.755pt x 158.0304pt>
+File: case5_1.png Graphic file (type png)
+ <use case5_1.png>
+Package pdftex.def Info: case5_1.png used on input line 977.
+(pdftex.def)             Requested size: 256.0748pt x 86.14534pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 977--978
+[][] 
+ []
+
+<casr5_2.png, id=61, 469.755pt x 151.2852pt>
+File: casr5_2.png Graphic file (type png)
+ <use casr5_2.png>
+Package pdftex.def Info: casr5_2.png used on input line 983.
+(pdftex.def)             Requested size: 256.0748pt x 82.46841pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 983--984
+[][] 
+ []
+
+<case5_3.png, id=62, 469.755pt x 149.8398pt>
+File: case5_3.png Graphic file (type png)
+ <use case5_3.png>
+Package pdftex.def Info: case5_3.png used on input line 989.
+(pdftex.def)             Requested size: 256.0748pt x 81.6805pt.
+
+Overfull \hbox (3.1298pt too wide) in paragraph at lines 989--990
+[][] 
+ []
+
+[7 <./india_case.png> <./india_case3.png> <./newzealand_case3.png> <./case4.png
+> <./case4_2.png>]
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+
+
+LaTeX Warning: Citation `mantra' on page 8 undefined on input line 1094.
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 1094--1095
+\OT1/ppl/m/n/9.53561 and ``detail-on-demand'' (His-togram and stacked area
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1095
+
+ []
+
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
+
+ []
+
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+No file bare_adv.bbl.
+[8 <./case5_1.png> <./casr5_2.png> <./case5_3.png>] (./bare_adv.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3105 strings out of 493013
- 47958 string characters out of 6133343
- 120537 words of memory out of 5000000
- 6609 multiletter control sequences out of 15000+600000
- 43741 words of font info for 92 fonts, out of 8000000 for 9000
+ 3282 strings out of 493013
+ 51369 string characters out of 6133343
+ 119163 words of memory out of 5000000
+ 6761 multiletter control sequences out of 15000+600000
+ 44256 words of font info for 94 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 39i,5n,31p,1429b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,6n,31p,1424b,295s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
-palatino/uplri8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/zapfdi
-ng/uzdr.pfb>
-Output written on bare_adv.pdf (4 pages, 147515 bytes).
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pa
+latino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/
+uplri8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/zapfding/uzdr.p
+fb>
+Output written on bare_adv.pdf (8 pages, 1601009 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
