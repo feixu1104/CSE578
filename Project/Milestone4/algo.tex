@@ -1,0 +1,59 @@
+\section{Algorithm}
+\begin{enumerate}
+\item Create a spark context.
+\item Load the input file using spark context in a JavaRDD.
+\item Split each row in the file using delimiter `,' and extract the required points of interest.\\ \\
+$split[6]$ - $pickupLatitude$ \\
+$split[5]$ - $pickupLongitude$ \\
+$split[1]$ - $pickupTime$ \\
+\item If the pickup location lies outside our envelope, we regard those points as outliers.
+\item We convert the points to indexes in a 3D cube
+\begin{itemize}
+\item $x$ : $pickupLatitude - (lowerLatitudeBoundary * 100)$
+\item $y$ : $pickupLongitude - (leftLongitudeBoundary * 100)$
+\item $z$ : $dayNumber\ from\ date - 1$
+\end{itemize}
+\item We map these points using $mapToPair$. This gives us a pair list of each time the cell occurs in the input. We get the output in the following format. \% is a separator chosen by me.
+\begin{equation*}
+JavaPairRDD = \left.
+\begin{cases}
+\langle timeStep\%cell\_x\%cell\_y, 1  \rangle & \text{if } the\ cell\ is\ inside \\
+\langle Outlier, 1  \rangle & \text{if } the\ cell\ is\ outside\ envelope
+\end{cases}
+\right.
+\end{equation*}
+\item We aggregate these pairs using $reduceByKey$ ignoring Outliers. This gives a total count of each unique key. This will help to identify the hot cells. The output is obtained in the format.
+\begin{equation*}
+\langle timeStep\%cell\_x\%cell\_y, [aggregatedCount]  \rangle
+\end{equation*}
+\item Create a spaceTimeCube[ ][ ][ ] with the dimensions
+\begin{itemize}
+\item $z$ : $time\ step\ [31]$
+\item $y$ : $latitude\ range\ [41]$
+\item $z$ : $longitude\ range\ [56]$
+\end{itemize}
+\item Iterate over the data and populate the space time cube, with the aggregated count.
+\begin{verbatim}
+spaceTimeCube[timeStep][cell_x][cell_y] = dataReducedByKey.get(i)._2;
+\end{verbatim}
+\item Find the mean using the formula
+\begin{equation*}
+\overline{X} = \frac{\sum_{j=1}^{n}x_{j}}{n}
+\end{equation*}
+\item Find the standard deviation using the formula
+\begin{equation*}
+S = \sqrt{\frac{\sum_{j=1}^{n}x_{j}^{2}}{n} - (\overline{X})^{2}}
+\end{equation*}
+\item Find the Getis-Ord Statisitic for each cell using the formula
+\begin{equation*}
+G_{i}^{*} = \ddfrac{\sum_{j=1}^{n}w_{i,j} x_{j} - \overline{X}\sum_{j=1}^{n}w_{i,j}}{S\sqrt{\frac{[n\sum_{j=1}^{n}w_{i,j}^{2} - (\sum_{j=1}^{n}w_{i,j})^{2}]}{n-1}}}
+\end{equation*}
+\begin{itemize}
+\item $w_{i,j}$ : Weight of cell with respect to another. The problem statement assumes equal weight
+\end{itemize}
+\item Create a map for the cells and their Getis-Ord statistic and sort them in descending order.
+\item Output the top 50 cell ids in descending order in the following format
+\begin{equation*}
+\langle cell\_x, cell\_y, time\_step, zscore \rangle
+\end{equation*}
+\end{enumerate}
